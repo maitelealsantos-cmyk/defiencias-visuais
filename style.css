@@ -1,0 +1,38 @@
+/* Cores de alto contraste e fontes legíveis */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Fundo escuro */
+    color: #FFFFFF; /* Texto claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Destaque para links e elementos focados via teclado */
+a {
+    color: #FFFF00; /* Amarelo de alto contraste */
+    text-decoration: underline;
+}
+
+a:focus, button:focus {
+    outline: 4px solid #00FF00; /* Borda verde brilhante no foco */
+}
+
+/* Esconde o atalho visualmente até receber foco do teclado */
+.sr-only-focusable {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: #000;
+    color: #FFF;
+    padding: 10px;
+}
