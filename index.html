@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Acessível - Deficiência Visual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="sr-only-focusable">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <h1>Portal de Acessibilidade</h1>
+        <nav role="navigation" aria-label="Menu Principal">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Este site foi desenvolvido com foco total em acessibilidade para leitores de tela e navegação por teclado.</p>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos Disponíveis</h2>
+            <article>
+                <h3>Leitores de Tela</h3>
+                <p>Informações e guias de uso sobre leitores de tela gratuitos e pagos.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 - Projeto de Acessibilidade Visual</p>
+    </footer>
+</body>
+</html>
